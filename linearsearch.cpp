@@ -17,10 +17,17 @@ void input() // Membuat Looping untuk Menentukan Panjang element Array.
         }
         else // Memebuat Kondisi Jika n > 0 dan n <= 20 tidak Terpenuhi
         {
-            cout << "\n========================\n";
-            cout << "Masukkan Element Array/n";
-            cout << "\n========================\n";
+            cout << "\nMinimum Jumlah Element Adalah 1 dan Maksimum jumlah Element adalah 20\n" << endl;    
         }
+    }
+    // Display Untuk Menginputkan isi masing - masing element array
+    cout << "\n======================\n";
+    cout << "Masukkan Element Array\n";
+    cout << "======================\n";
 
+    for ( i = 0; i < n; i++)
+    {
+        cout << "<" << (i+1) << ">";
+        cin >> arr[i];
     }
 }
