@@ -31,3 +31,58 @@ void input() // Membuat Looping untuk Menentukan Panjang element Array.
         cin >> arr[i];
     }
 }
+
+void linearsearch() // Membuat algoritma linearsearch
+{
+    char ch; //inisialisasi untuk pilihan lanjut atau tidak
+    int ctr; //inisialisasi untuk melihat jumlah perbandingan
+    int item; //inisialisasi untuk input data yang mau dicari
+
+    // Membuat Looping untuk cari element array
+    do
+    {
+        cout << "\nMasukkan Element yang ingin Dicari : ";
+        cin >> item;
+
+        ctr = 0;
+        i = 0;
+
+        while (i < n)// Step 3
+        {
+            ctr++;
+            if (arr[i] == item) // membuat kondisi jika data ditemukan
+            {
+                cout << "\n" << item << "ditemukan pada posisi ke " << (i + 1) << endl;
+                break;
+            }
+            i++; //step 4
+        }
+        if (i > n) // step 5
+        {
+            cout << "\n" << item << " Tidak ditemukan di dalam array";
+        }
+
+        cout << "\nJumlah Nilai Dibandingkan = " << ctr << endl;
+
+        cout << "\nLanjut Ke Pencarian Lain? (y/t):";
+        cin >> ch;
+    } while (ch == 'y' || ch == 'Y');
+}
+
+void display() // Membuat Prosedur display
+{
+    cout << "\nElement Array Adalah : \n " ;
+    for (i = 0; i < n; i++)
+    {
+        cout << arr [i] << "";
+        cout << endl;
+    }
+
+}
+
+int main ()
+{
+    input();
+    linearsearch();
+    display();
+}
