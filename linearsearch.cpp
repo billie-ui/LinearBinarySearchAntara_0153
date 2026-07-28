@@ -80,7 +80,7 @@ void display() // Membuat Prosedur display.
 
 }
 
-int main ()
+int main () // Membuat Main.
 {
     input();
     linearsearch();
