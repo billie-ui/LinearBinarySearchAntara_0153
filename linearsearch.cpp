@@ -69,7 +69,7 @@ void linearsearch() // Membuat algoritma linearsearch
     } while (ch == 'y' || ch == 'Y');
 }
 
-void display() // Membuat Prosedur display
+void display() // Membuat Prosedur display.
 {
     cout << "\nElement Array Adalah : \n " ;
     for (i = 0; i < n; i++)
