@@ -5,7 +5,7 @@ int arr [20];
 int n;
 int i;
 
-void input() // Membuat Looping untuk Menentukan Panjang element Array
+void input() // Membuat Looping untuk Menentukan Panjang element Array.
 {
     while (true) // Membuat looping untuk menentukan panjang element array
     {
@@ -21,6 +21,6 @@ void input() // Membuat Looping untuk Menentukan Panjang element Array
             cout << "Masukkan Element Array/n";
             cout << "\n========================\n";
         }
-        
+
     }
 }
