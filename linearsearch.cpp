@@ -15,7 +15,7 @@ void input() // Membuat Looping untuk Menentukan Panjang element Array.
         {
             break;
         }
-        else // Memebuat Kondisi Jika
+        else // Memebuat Kondisi Jika n > 0 dan n <= 20 tidak Terpenuhi
         {
             cout << "\n========================\n";
             cout << "Masukkan Element Array/n";
